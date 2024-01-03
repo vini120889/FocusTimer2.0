@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer 2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script type="module" src="./controls.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="container">
+        <section id="timer">
+            <span id="minutes">25</span>
+            <span id="separator">:</span>
+            <span id="seconds">00</span>
+        </section>
+        <section id="controls">
+            <button class="ph-bold ph-play-circle" id="play" onclick="clickPlay()"></button>
+            <button class="ph-bold ph-stop-circle" id="stop" onclick="clickStop()"></button>
+            <button class="ph-bold ph-plus-circle" id="increaseTime" onclick="clickPlusButton()"></button>
+            <button class="ph-bold ph-minus-circle" id="decreaseTime" onclick="clickLessButton()"></button>
+        </section>
+    </section>
+    <section id="cards">
+        <div class="block-cards-tree">
+            <button id="tree"><img src="./assets/tree.svg" alt="desenho de uma árvore"></button>
+        </div>
+        <div class="block-cards-cloud">
+            <button id="cloud"><img src="./assets/cloud.svg" alt="desenho de uma nuvem"></button>
+        </div>
+        <div class="block-cards-house">
+            <button id="house"><img src="./assets/house.svg" alt="desenho de uma casa"></button>
+        </div>
+        <div class="block-cards-fire">
+            <button id="fire"><img src="./assets/fire.svg" alt="desenho do fogo"></button>
+        </div>
+    </section>
+    <script type="text/javascript" src="./actions.js"></script>
+    <script type="module" src="./cards.js"></script>  
+</body>
+</html>

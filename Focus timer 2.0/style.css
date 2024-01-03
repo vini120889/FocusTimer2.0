@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --font-family:'Roboto', sans-serif;
+  --color-base-card: #E1E1E6;
+  --color-timer-button: #323238;
+}
+body {
+  display: flex;
+  height: 100vh;
+  place-content: center;
+  place-items: center;
+  gap: 19.2rem;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#timer {
+  color: var(--color-timer-button);
+  font-family: var(--font-family);
+  font-size: 12.6rem;
+  font-weight: 500;
+}
+#controls {
+  display: flex;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+#controls button {
+  color: var(--color-timer-button);
+  font-size: 5rem;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+#cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+.block-cards-tree, .block-cards-cloud, .block-cards-house, .block-cards-fire {
+  display: flex;
+  justify-content: center;
+  width: 13.8rem;
+  height: 15.2rem;
+  background-color: var(--color-base-card);
+  border-radius: 2.4rem;
+}
+
+#cards button:hover img{
+  filter: invert(1);
+}
+
+
