@@ -1,5 +1,7 @@
 # Focus Timer 2.0 
 
+### Informações do projeto
+
 Nesse projeto foram abordados os seguintes conhecimentos:
 
 - Estrutura de dados HTML;
